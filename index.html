@@ -1,12 +1,10 @@
 <!doctype html>
 <html class="no-js" lang="en">
 
-<!-- Mirrored from themegenix.net/html/zaira/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 11 Mar 2025 04:53:35 GMT -->
-
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>మరో కురుక్షేత్రం వార్తలు</title>
+    <title>మరో కురుక్షేత్రం డైలీ వార్తలు</title>
     <meta name="description" content="Maro Kurukshetram News Template">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -14,6 +12,7 @@
     <!-- Place favicon.ico in the root directory -->
 
     <!-- CSS here -->
+    <link href="https://fonts.googleapis.com/css2?family=Ramabhadra&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/animate.min.css">
     <link rel="stylesheet" href="assets/css/magnific-popup.css">
@@ -32,8 +31,22 @@
     <!-- Font Awesome CDN -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
 
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link rel="stylesheet" type="text/css"
+        href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
 
+    <style>
+        select {
+            font-size: 18px;
+            padding: 8px;
+        }
+
+        option {
+            font-size: 20px;
+        }
+    </style>
 
 
 </head>
@@ -44,8 +57,8 @@
     <div id="preloader">
         <div class="loader-inner">
             <div id="loader">
-                <h2 id="bg-loader">కురుక్షేత్రం<span>...</span></h2>
-                <h2 id="fg-loader">కురుక్షేత్రం<span>...</span></h2>
+                <h2 id="bg-loader">మరో కురుక్షేత్రం<span>...</span></h2>
+                <h2 id="fg-loader">మరో కురుక్షేత్రం<span>...</span></h2>
             </div>
         </div>
     </div>
@@ -55,7 +68,7 @@
     <!-- header-area -->
     <header>
         <div id="header-fixed-height"></div>
-        
+
         <div id="sticky-header" class="menu-area">
             <div class="container-fluid p-0">
                 <div class="row g-0">
@@ -64,28 +77,23 @@
                             <div class="row align-items-center g-0">
                                 <div class="col-xl-5">
                                     <div class="header-left-side">
-                                        <div class="offcanvas-toggle">
-                                            <a href="javascript:void(0)" class="menu-tigger">
-                                                <span></span>
-                                                <span></span>
-                                                <span></span>
-                                            </a>
-                                        </div>
                                         <div class="col-xl-2 col-lg-3 col-md-4">
                                             <div class="logo text-center">
-                                                <a href="index.html"><img src="assets/img/images/Kuru_logo.png" alt="Logo"></a>
+                                                <a href="index.html"><img src="assets/img/images/maro news.png"
+                                                        alt="Logo"></a>
                                             </div>
                                             <div class="logo d-none text-center">
-                                                <a href="index.html"><img src="assets/img/logo/w_logo.png" alt="Logo"></a>
+                                                <a href="index.html"><img src="assets/img/logo/w_logo.png"
+                                                        alt="Logo"></a>
                                             </div>
                                         </div>
                                         <div class="navbar-wrap main-menu d-none d-xl-flex">
                                             <ul class="navigation">
                                                 <li><a href="#">హోమ్</a></li>
-                                                <li><a href="#">మా గురించి</a></li>
+                                                <li><a href="./about.html">మా గురించి</a></li>
                                                 <li class="menu-item-has-children"><a href="#">వార్తలు</a>
                                                     <ul class="sub-menu">
-                                                        <li><a href="#">లోకల్ మండి</a></li>
+                                                        <li><a href="#localm">లోకల్ మండి</a></li>
                                                         <li><a href="#">రాజకీయాలు</a></li>
                                                         <li><a href="#">హైదరాబాద్ వార్తలు</a></li>
                                                         <li><a href="#">అంతర్జాతీయ వార్తలు</a></li>
@@ -93,13 +101,13 @@
                                                         <li><a href="#">మీడియా</a></li>
                                                     </ul>
                                                 </li>
-                                                <li><a href="assets/img/images/Maro KurukshetramNewsPaper.pdf" target="_blank">న్యూస్ పేపర్</a></li>
+                                                <li><a href="./NewsPaper.html">న్యూస్ పేపర్</a></li>
                                                 </li>
-                                                <li><a href="#">సంప్రదించండి</a></li>
+                                                <li><a href="./contact.html">సంప్రదించండి</a></li>
                                             </ul>
                                         </div>
                                         <div class="app">
-                                            <a href="#" class="btn btn-primary">Download App</a>
+                                            <a href="#" class="btn btn-primary">App Launching...</a>
                                         </div>
                                     </div>
                                 </div>
@@ -112,28 +120,13 @@
                             <nav class="menu-box">
                                 <div class="close-btn"><i class="fas fa-times"></i></div>
                                 <div class="nav-logo">
-                                    <a href="index.html"><img src="assets/img/images/Kuru_logo.png" alt="Logo"></a>
+                                    <a href="index.html"><img src="assets/img/images/maro news.png" alt="Logo"></a>
                                 </div>
                                 <div class="nav-logo d-none">
                                     <a href="index.html"><img src="assets/img/logo/w_logo.png" alt="Logo"></a>
                                 </div>
-                                <div class="mobile-search">
-                                    <form action="#">
-                                        <input type="text" placeholder="Search here...">
-                                        <button><i class="flaticon-search"></i></button>
-                                    </form>
-                                </div>
                                 <div class="menu-outer">
 
-                                </div>
-                                <div class="social-links">
-                                    <ul class="clearfix list-wrap">
-                                        <li><a href="javascript:void(0)"><i class="fab fa-facebook-f"></i></a></li>
-                                        <li><a href="javascript:void(0)"><i class="fab fa-twitter"></i></a></li>
-                                        <li><a href="javascript:void(0)"><i class="fab fa-instagram"></i></a></li>
-                                        <li><a href="javascript:void(0)"><i class="fab fa-linkedin-in"></i></a></li>
-                                        <li><a href="javascript:void(0)"><i class="fab fa-youtube"></i></a></li>
-                                    </ul>
                                 </div>
                             </nav>
                         </div>
@@ -144,55 +137,6 @@
                 </div>
             </div>
         </div>
-
-        <!-- offCanvas-area -->
-        <div class="offCanvas-wrap">
-            <div class="offCanvas-body">
-                <div class="offCanvas-toggle">
-                    <span></span>
-                    <span></span>
-                </div>
-                <div class="offCanvas-content">
-                    <div class="offCanvas-logo logo">
-                        <a href="index.html" class="logo-dark"><img src="assets/img/images/Kuru_logo.png"
-                                alt="Logo"></a>
-                        <a href="index.html" class="logo-light"><img src="assets/img/logo/w_logo.png" alt="Logo"></a>
-                    </div>
-                    <p>తాజా ఆర్థిక విధానాలు ప్రపంచ మార్కెట్లను పున hap రూపకల్పన చేస్తాయి, స్థిరమైన వృద్ధి మరియు స్థిరత్వం కోసం వ్యూహాలను స్వీకరించడానికి వ్యాపారాలను ప్రేరేపిస్తున్నాయి.</p>
-                    <ul class="offCanvas-instagram list-wrap">
-                        <li><a href="#"><img
-                                    src="assets/img/images/RG.jpg" alt="img"></a></li>
-                        <li><a href="#"><img
-                                    src="assets/img/images/RevanthReddyCM.jpeg" alt="img"></a></li>
-                        <li><a href="#"><img
-                                    src="assets/img/images/Dhoni.jpeg" alt="img"></a></li>
-                        <li><a href="#"><img
-                                    src="assets/img/images/Rohith.jpeg" alt="img"></a></li>
-                        <li><a href="#"><img
-                                    src="assets/img/images/Prabhas.jpg" alt="img"></a></li>
-                        <li><a href="#"><img
-                                    src="assets/img/images/Both.webp" alt="img"></a></li>
-                    </ul>
-                </div>
-                <div class="offCanvas-contact">
-                    <h4 class="title">టచ్ లో పొందండి</h4>
-                    <ul class="offCanvas-contact-list list-wrap">
-                        <li><i class="fas fa-envelope-open"></i><a href="mailto:info@webmail.com">support@kurukshetram.com</a>
-                        </li>
-                        <li><i class="fas fa-phone"></i><a href="tel:8964900009">8964900009</a></li>
-                        <li><i class="fas fa-map-marker-alt"></i> Arlington Heights, Whitefields, HITEC City, Kondapur, Telangana 500084</li>
-                    </ul>
-                    <ul class="offCanvas-social list-wrap">
-                        <li><a href="javascript:void(0)"><i class="fab fa-facebook-f"></i></a></li>
-                        <li><a href="javascript:void(0)"><i class="fab fa-twitter"></i></a></li>
-                        <li><a href="javascript:void(0)"><i class="fab fa-linkedin-in"></i></a></li>
-                        <li><a href="javascript:void(0)"><i class="fab fa-youtube"></i></a></li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-        <div class="offCanvas-overlay"></div>
-        <!-- offCanvas-area-end -->
     </header>
     <!-- header-area-end -->
 
@@ -208,95 +152,58 @@
                         <div class="col-lg-3">
                             <div class="featured-post-item">
                                 <div class="featured-post-thumb">
-                                    <a href="./news.html"><img src="assets/img/images/RR_CM.jpeg" alt=""></a>
+                                    <a href="./cm.html"><img src="assets/img/images/R4k.svg" alt=""></a>
                                 </div>
                                 <div class="featured-post-content">
                                     <a href="#" class="post-tag">ముఖ్యమంత్రి</a>
                                     <h2 class="post-title"><a href="#">ప్రజల కోసం ఒక నాయకుడు, రాష్ట్రం
                                             కోసం ఒక దార్శనికత!</a></h2>
-                                    <div class="blog-post-meta">
-                                        <ul class="list-wrap">
-                                            <li><i class="fa-solid fa-user"></i>నవ్య<a href="#">అడ్మిన్</a>
-                                            </li>
-                                            <li><i class="fa-solid fa-calendar-days"></i>27 August, 2024</li>
-                                        </ul>
-                                    </div>
                                 </div>
                             </div>
                         </div>
                         <div class="col-lg-3">
                             <div class="featured-post-item">
                                 <div class="featured-post-thumb">
-                                    <a href="./news.html"><img src="assets/img/images/Newpaper.avif" alt=""></a>
+                                    <a href="./news.html"><img src="assets/img/images/AAA.svg" alt=""></a>
                                 </div>
                                 <div class="featured-post-content">
                                     <a href="#" class="post-tag">బ్రేకింగ్ న్యూస్</a>
                                     <h2 class="post-title"><a href="#">బ్రేకింగ్ న్యూస్: వక్రరేఖకు ముందు
                                             ఉండండి!</a></h2>
-                                    <div class="blog-post-meta">
-                                        <ul class="list-wrap">
-                                            <li><i class="fa-solid fa-user"></i>నవ్య<a href="#">అడ్మిన్</a>
-                                            </li>
-                                            <li><i class="fa-solid fa-calendar-days"></i>27 August, 2024</li>
-                                        </ul>
-                                    </div>
                                 </div>
                             </div>
                         </div>
                         <div class="col-lg-3">
                             <div class="featured-post-item">
                                 <div class="featured-post-thumb">
-                                    <a href="./news.html"><img src="assets/img/images/Politics.avif" alt=""></a>
+                                    <a href="./politics.html"><img src="assets/img/images/REVEBOTH.svg" alt=""></a>
                                 </div>
                                 <div class="featured-post-content">
                                     <a href="#" class="post-tag">రాజకీయాలు</a>
                                     <h2 class="post-title"><a href="#">ప్రజాస్వామ్యంలో బలం, చర్యలో
                                             వృద్ధి!</a></h2>
-                                    <div class="blog-post-meta">
-                                        <ul class="list-wrap">
-                                            <li><i class="fa-solid fa-user"></i>నవ్య<a href="#">అడ్మిన్</a>
-                                            </li>
-                                            <li><i class="fa-solid fa-calendar-days"></i>27 August, 2024</li>
-                                        </ul>
-                                    </div>
                                 </div>
                             </div>
                         </div>
                         <div class="col-lg-3">
                             <div class="featured-post-item">
                                 <div class="featured-post-thumb">
-                                    <a href="./news.html"><img src="assets/img/images/TeamIndia.jpg" alt=""></a>
+                                    <a href="./sports.html"><img src="assets/img/images/war1PNG.png" alt=""></a>
                                 </div>
                                 <div class="featured-post-content">
-                                    <a href="#" class="post-tag">క్రీడలు</a>
-                                    <h2 class="post-title"><a href="#">ఇంధన ఛాంపియన్స్, ఉత్తేజకరమైన
-                                            విజయాలు!</a></h2>
-                                    <div class="blog-post-meta">
-                                        <ul class="list-wrap">
-                                            <li><i class="fa-solid fa-user"></i>నవ్య<a href="#">అడ్మిన్</a>
-                                            </li>
-                                            <li><i class="fa-solid fa-calendar-days"></i>27 August, 2024</li>
-                                        </ul>
-                                    </div>
+                                    <a href="#" class="post-tag">న్యూస్</a>
+                                    <h2 class="post-title"><a href="#">భారత్‌ను ఆపడం ఎవరి తరమూ కాదు!</a></h2>
                                 </div>
                             </div>
                         </div>
                         <div class="col-lg-3">
                             <div class="featured-post-item">
                                 <div class="featured-post-thumb">
-                                    <a href="./news.html"><img src="assets/img/images/Socialmedia.webp" alt=""></a>
+                                    <a href="./Social.html"><img src="assets/img/images/MOBILE.svg" alt=""></a>
                                 </div>
                                 <div class="featured-post-content">
                                     <a href="#" class="post-tag">సోషల్ మీడియా</a>
-                                    <h2 class="post-title"><a href="#">సరిహద్దులను బద్దలు కొట్టడం, ఒక
-                                            సమయంలో ఒక పోస్ట్!</a></h2>
-                                    <div class="blog-post-meta">
-                                        <ul class="list-wrap">
-                                            <li><i class="fa-solid fa-user"></i>నవ్య<a href="#">అడ్మిన్</a>
-                                            </li>
-                                            <li><i class="fa-solid fa-calendar-days"></i>27 August, 2024</li>
-                                        </ul>
-                                    </div>
+                                    <h2 class="post-title"><a href="#">ఇప్పటి మోబైల్, మీరు కలచి మార్చే ప్రపంచం!</a></h2>
                                 </div>
                             </div>
                         </div>
@@ -308,213 +215,69 @@
 
         <!-- Add Section Start -->
 
-        <section>
-            <div class="container mt-4">
+        <section class="categ" id="localm">
+            <div class="container-fluid">
+                <h2 class="sync">లోకల్ మండి</h2>
+                <label for="state">రాష్ట్రం:</label>
+                <select id="state">
+                    <option value="" disabled selected>--రాష్ట్రాన్ని ఎంచుకోండి--</option>
+                    <option value="Telangana">తెలంగాణ</option>
+                    <option value="Andhra Pradesh">ఆంధ్రప్రదేశ్</option>
+                </select>
 
-                <h2 class="text-center">లోకల్ మండి</h2>
-                <!-- State Selection Dropdown -->
-                <div class="text-center mb-3">
-                    <label for="stateSelect" class="form-label"><strong></strong></label>
-                    <select id="stateSelect" class="form-select w-auto d-inline-block">
-                        <option value="Telangana" selected>తెలంగాణ</option>
-                        <option value="Andhra Pradesh">ఆంధ్రప్రదేశ్</option>
-                        <option value="Karnataka">కర్ణాటక</option>
-                        <option value="Tamil Nadu">తమిళనాడు</option>
-                        <option value="Maharashtra">మహారాష్ట్ర</option>
-                    </select>
-                </div>
-    
-                <div id="cropCarousel" class="carousel slide" data-bs-ride="carousel">
-                    <div class="carousel-inner">
-    
-                        <div class="carousel-item active">
-                            <div class="multi-carousel">
-                                <div class="crop-card">
-                                    <span class="crop-icon">🌾</span>
-                                    <div class="crop-name">బియ్యం</div>
-                                    <div class="crop-rate">అధిక రేటు: ₹33.3</div>
-                                    <div class="crop-rate">తక్కువ రేటు: ₹32.5</div>
-                                </div>
-                                <div class="crop-card">
-                                    <span class="crop-icon">🌿</span>
-                                    <div class="crop-name">గోధుమ</div>
-                                    <div class="crop-rate">అధిక రేటు: ₹25.00</div>
-                                    <div class="crop-rate">తక్కువ రేటు: ₹24.00</div>
-                                </div>
-                                <div class="crop-card">
-                                    <span class="crop-icon">🧂</span>
-                                    <div class="crop-name">పత్తి</div>
-                                    <div class="crop-rate">అధిక రేటు: ₹60.00</div>
-                                    <div class="crop-rate">తక్కువ రేటు: ₹60.00</div>
-                                </div>
-                                <div class="crop-card">
-                                    <span class="crop-icon">🌽</span>
-                                    <div class="crop-name">మొక్కజొన్న</div>
-                                    <div class="crop-rate">అధిక రేటు: ₹35,000</div>
-                                    <div class="crop-rate">తక్కువ రేటు: ₹25,000</div>
-                                </div>
-                                <div class="crop-card">
-                                    <span class="crop-icon">🌶️</span>
-                                    <div class="crop-name">మిరప</div>
-                                    <div class="crop-rate">అధిక రేటు: ₹45.00</div>
-                                    <div class="crop-rate">తక్కువ రేటు: ₹45.00</div>
-                                </div>
-                            </div>
-                        </div>
-    
-                        <div class="carousel-item">
-                            <div class="multi-carousel">
-                                <div class="crop-card">
-                                    <span class="crop-icon">🥔</span>
-                                    <div class="crop-name">బంగాళాదుంప</div>
-                                    <div class="crop-rate">అధిక రేటు: ₹24.00</div>
-                                    <div class="crop-rate">తక్కువ రేటు: ₹24.00</div>
-                                </div>
-                                <div class="crop-card">
-                                    <span class="crop-icon">🍅</span>
-                                    <div class="crop-name">టమోటా</div>
-                                    <div class="crop-rate">అధిక రేటు: ₹11.00</div>
-                                    <div class="crop-rate">తక్కువ రేటు: ₹11.00</div>
-                                </div>
-                                <div class="crop-card">
-                                    <span class="crop-icon">🥦</span>
-                                    <div class="crop-name">బ్రొకోలీ</div>
-                                    <div class="crop-rate">అధిక రేటు: ₹50.00</div>
-                                    <div class="crop-rate">తక్కువ రేటు: ₹40.00</div>
-                                </div>
-                                <div class="crop-card">
-                                    <span class="crop-icon">🥕</span>
-                                    <div class="crop-name">కారెట్</div>
-                                    <div class="crop-rate">అధిక రేటు: ₹15.00</div>
-                                    <div class="crop-rate">తక్కువ రేటు: ₹10.00</div>
-                                </div>
-                                <div class="crop-card">
-                                    <span class="crop-icon">🧄</span>
-                                    <div class="crop-name">వెల్లుల్లి</div>
-                                    <div class="crop-rate">అధిక రేటు: ₹70.00</div>
-                                    <div class="crop-rate">తక్కువ రేటు: ₹58.00</div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="carousel-item">
-                            <div class="multi-carousel">
-                                <div class="crop-card">
-                                    <span class="crop-icon">🌾</span>
-                                    <div class="crop-name">జొన్న</div>
-                                    <div class="crop-rate">అధిక రేటు: ₹22.00</div>
-                                    <div class="crop-rate">తక్కువ రేటు: ₹18.00</div>
-                                </div>
-                                <div class="crop-card">
-                                    <span class="crop-icon">🥜</span>
-                                    <div class="crop-name">వేరుశెనగ</div>
-                                    <div class="crop-rate">అధిక రేటు: ₹200.00</div>
-                                    <div class="crop-rate">తక్కువ రేటు: ₹157.00</div>
-                                </div>
-                                <div class="crop-card">
-                                    <span class="crop-icon">🌰</span>
-                                    <div class="crop-name">నువ్వులు</div>
-                                    <div class="crop-rate">అధిక రేటు: ₹300.00</div>
-                                    <div class="crop-rate">తక్కువ రేటు: ₹250.00</div>
-                                </div>
-                                <div class="crop-card">
-                                    <span class="crop-icon">🥥</span>
-                                    <div class="crop-name">కొబ్బరి</div>
-                                    <div class="crop-rate">అధిక రేటు: ₹20.00</div>
-                                    <div class="crop-rate">తక్కువ రేటు: ₹16.00</div>
-                                </div>
-                                <div class="crop-card">
-                                    <span class="crop-icon">🍉</span>
-                                    <div class="crop-name">పుచ్చకాయ</div>
-                                    <div class="crop-rate">అధిక రేటు: ₹20.00</div>
-                                    <div class="crop-rate">తక్కువ రేటు: ₹15.00</div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="carousel-item">
-                            <div class="multi-carousel">
-                                <div class="crop-card">
-                                    <span class="crop-icon">🍇</span>
-                                    <div class="crop-name">ద్రాక్ష</div>
-                                    <div class="crop-rate">అధిక రేటు: ₹75.00</div>
-                                    <div class="crop-rate">తక్కువ రేటు: ₹64.00</div>
-                                </div>
-                                <div class="crop-card">
-                                    <span class="crop-icon">🍋</span>
-                                    <div class="crop-name">నిమ్మకాయ</div>
-                                    <div class="crop-rate">అధిక రేటు: ₹25.00</div>
-                                    <div class="crop-rate">తక్కువ రేటు: ₹18.00</div>
-                                </div>
-                                <div class="crop-card">
-                                    <span class="crop-icon">🥭</span>
-                                    <div class="crop-name">మామిడి</div>
-                                    <div class="crop-rate">అధిక రేటు: ₹69.00</div>
-                                    <div class="crop-rate">తక్కువ రేటు: ₹66.00</div>
-                                </div>
-                                <div class="crop-card">
-                                    <span class="crop-icon">🌵</span>
-                                    <div class="crop-name">క్యాక్టస్ పండ్లు</div>
-                                    <div class="crop-rate">అధిక రేటు: ₹15.00</div>
-                                    <div class="crop-rate">తక్కువ రేటు: ₹12.00</div>
-                                </div>
-                                <div class="crop-card">
-                                    <span class="crop-icon">🥒</span>
-                                    <div class="crop-name">దోసకాయ</div>
-                                    <div class="crop-rate">అధిక రేటు: ₹15.00</div>
-                                    <div class="crop-rate">తక్కువ రేటు: ₹12.00</div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-    
-                    <button class="carousel-control-prev" type="button" data-bs-target="#cropCarousel" data-bs-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    </button>
-                    <button class="carousel-control-next" type="button" data-bs-target="#cropCarousel" data-bs-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    </button>
-                </div>
+                <label for="crop">టైప్:</label>
+                <select id="crop">
+                    <option value="" disabled selected>--పంటను ఎంచుకోండి--</option>
+                    <option value="Tomato">🍅 టొమాటో</option>
+                    <option value="Onion">🧅 ఉల్లిపాయ</option>
+                    <option value="Potato">🥔 బంగాళదుంప</option>
+                    <option value="Carrot">🥕 కారెట్</option>
+                    <option value="Beans">🫘 బీన్స్</option>
+                    <option value="Brinjal">🍆 వంకాయ</option>
+                    <option value="Cabbage">🥬 క్యాబేజీ</option>
+                    <option value="Cauliflower">🥦 కాలీఫ్లవర్</option>
+                    <option value="GreenChilli">🌶️ పచ్చిమిరప</option>
+                    <option value="Drumstick">🌿 మునగకాయ</option>
+                    <option value="BottleGourd">🥒 సొరకాయ</option>
+                    <option value="RidgeGourd">🥒 బీరకాయ</option>
+                    <option value="SnakeGourd">🥒 పొట్లకాయ</option>
+                    <option value="BitterGourd">🍀 కాకరకాయ</option>
+                    <option value="Spinach">🥬 పాలకూర</option>
+                    <option value="Amaranthus">🌿 తోటకూర</option>
+                    <option value="CorianderLeaves">🌿 కొత్తిమీర</option>
+                    <option value="MintLeaves">🍃 పుదీనా</option>
+                    <option value="CurryLeaves">🌿 కరివేపాకు</option>
+                    <option value="Garlic">🧄 వెల్లుల్లి</option>
+                    <option value="Ginger">🫚 అల్లం</option>
+                    <option value="Chicken">🍗 చికెన్</option>
+                    <option value="Egg">🥚 గుడ్డు</option>
+                    <option value="Mutton">🍖 మటన్</option>
+                    <option value="Fish">🐟 చేప</option>
+                    <option value="Gold">🪙 బంగారం</option>
+                    <option value="Silver">🥈 వెండి</option>
+
+
+                </select>
+
+                <button onclick="fetchMandiRates()">శోధన...</button>
+
+                <table id="resultTable">
+                    <thead>
+                        <tr>
+                            <th>జిల్లా</th>
+                            <th>మండి</th>
+                            <th>కనిష్ట రేటు</th>
+                            <th>గరిష్ట రేటు</th>
+                            <th>సగటు రేటు</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                    </tbody>
+                </table>
             </div>
         </section>
 
         <!-- Add Section End -->
-
-        <!-- newsletter-area -->
-
-        <div class="container-fluid">
-            <div class="cont">
-                <div class="card1">
-                    <a href="./news.html">
-                    <img src="./assets/img/images/Start.png" alt="Krishna Image">
-                    </a>
-                </div>
-
-                <div class="card2">
-                    <a href="./news.html">
-                    <img src="./assets/img/images/Sign in.png" alt="Politician">
-                    </a>
-                </div>
-
-                <div class="card">
-                    <a href="./news.html">
-                    <img src="./assets/img/images/ReventhReddyCM.png" alt="Charminar">
-                    </a>
-                </div>
-
-                <div class="card3">
-                    <a href="./news.html">
-                    <img src="./assets/img/images/Stedium.png" alt="Biryani">
-                    </a>
-                </div>
-
-                <div class="card4">
-                    <a href="./news.html">
-                    <img src="./assets/img/images/Categories.png">
-                    </a>
-                </div>
-            </div>
-        </div>
-
-        <!-- newsletter-area-end -->
 
         <!-- latest-post-area -->
         <section class="latest-post-area pt-60 pb-60">
@@ -547,25 +310,21 @@
                                     <div class="col-66">
                                         <div class="featured-post-item latest-post-item big-post">
                                             <div class="featured-post-thumb">
-                                                <a href="./news.html"><img src="assets/img/images/BreakingNews.avif" alt=""></a>
+                                                <a href="./news1.html"><img src="assets/img/images/Ravanth09.svg"
+                                                        alt=""></a>
                                             </div>
                                             <div class="featured-post-content">
                                                 <a href="#" class="post-tag">వార్తల నవీకరణలు</a>
-                                                <h2 class="post-title bold-underline"><a
-                                                        href="#">ముఖ్యాంశాల నుండి మీ స్క్రీన్
-                                                        వరకు..!</a></h2>
-                                                <div class="blog-post-meta">
-                                                    <ul class="list-wrap">
-                                                        <li><i class="fa-solid fa-user"></i>నవ్య<a
-                                                                href="#">అడ్మిన్</a></li>
-                                                        <li><i class="fa-solid fa-calendar-days"></i>27 ఆగస్టు, 2024</li>
-                                                        <li><i class="fa-solid fa-clock"></i>20 నిమిషాలు</li>
-                                                    </ul>
-                                                </div>
-                                                <p>ఆశ్చర్యకరమైన పరిణామాల మధ్య, రేవంత్ రెడ్డి సర్ అధికారికంగా తమ పదవికి
-                                                    రాజీనామా చేస్తున్నట్లు ప్రకటించారు. ఈ ఊహించని నిర్ణయం
-                                                    రాష్ట్రవ్యాప్తంగా సంచలనం సృష్టించింది, రాబోయే ఎన్నికలపై దాని ప్రభావం
-                                                    ఎలా ఉంటుందో రాజకీయ విశ్లేషకులు అంచనా వేస్తున్నారు.</p>
+                                                <h2 class="post-title bold-underline"><a href="#">హైదరాబాద్‌కు 'అ'
+                                                        స్థితి రానివ్వను!" అంటూ హుం‌కారం పలికిన సీఎం రేవంత్ రెడ్డి!</a>
+                                                </h2>
+                                                <p>2025 మే 9న, ముఖ్యమంత్రి రేవంత్ రెడ్డి మాట్లాడుతూ, "హైదరాబాద్
+                                                    అభివృద్ధి నుంచి వెనకబడే పరిస్థితిని రణివ్వను!" అంటూ కఠినంగా
+                                                    హెచ్చరించారు. గత పాలకుల దుర్వినియోగం, ప్రణాళికల లేమి వల్ల నగరానికి
+                                                    ఎదురైన సమస్యలపై ఆయన గట్టిగా స్పందించారు. ప్రజల నమ్మకాన్ని
+                                                    నిలబెట్టుకునేందుకు, తాను తీసుకున్న అభివృద్ధి చర్యలు.....
+
+                                                </p>
                                             </div>
                                         </div>
                                     </div>
@@ -573,37 +332,26 @@
                                         <div class="latest-post-wrap">
                                             <div class="featured-post-item latest-post-item small-post">
                                                 <div class="featured-post-thumb">
-                                                    <a href="./news.html"><img src="assets/img/images/BreakingNews.avif" alt=""></a>
+                                                    <a href="./news2.html"><img
+                                                            src="assets/img/images/pakistan war craft crash.jpg"
+                                                            alt=""></a>
                                                 </div>
                                                 <div class="featured-post-content">
-                                                    <a href="#" class="post-tag">రాజకీయాలు</a>
-                                                    <h2 class="post-title"><a href="#">రాజకీయ ప్రవేశం
-                                                            లేని భయంకరమైన పరిణామాలు</a>
+                                                    <a href="#" class="post-tag">న్యూస్</a>
+                                                    <h2 class="post-title"><a href="#">యుద్ధానికి దిగిన పాక్- భారత్‌పై
+                                                            మిస్సైళ్లతో దాడి!</a>
                                                     </h2>
-                                                    <div class="blog-post-meta">
-                                                        <ul class="list-wrap">
-                                                            <li><i class="fa-solid fa-user"></i>నవ్య<a
-                                                                    href="#">అడ్మిన్</a></li>
-                                                            <li><i class="fa-solid fa-calendar-days"></i>27 ఆగస్టు, 2024</li>
-                                                        </ul>
-                                                    </div>
                                                 </div>
                                             </div>
                                             <div class="featured-post-item latest-post-item small-post">
                                                 <div class="featured-post-thumb">
-                                                    <a href="./news.html"><img src="assets/img/images/BreakingNews.avif" alt=""></a>
+                                                    <a href="./news3.html"><img src="assets/img/images/S11.png"
+                                                            alt=""></a>
                                                 </div>
                                                 <div class="featured-post-content">
                                                     <a href="#" class="post-tag">వ్యాపారం</a>
                                                     <h2 class="post-title"><a href="#">ఒక-దేశ ఎజెండా:
                                                             వ్యూహాలు మరియు సవాళ్లు</a></h2>
-                                                    <div class="blog-post-meta">
-                                                        <ul class="list-wrap">
-                                                            <li><i class="fa-solid fa-user"></i>నవ్య<a
-                                                                    href="#">అడ్మిన్</a></li>
-                                                            <li><i class="fa-solid fa-calendar-days"></i>27 ఆగస్టు, 2024</li>
-                                                        </ul>
-                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
@@ -617,18 +365,28 @@
                                     <div class="sidebar-avatar">
                                         <div class="sidebar-avatar-thumb">
                                             <a href="./news.html">
-                                            <img src="assets/img/images/HariSir.jpeg" alt=""></a>
+                                                <img src="assets/img/images/smile dr copy.jpg" alt=""></a>
                                         </div>
                                         <div class="sidebar-avatar-content">
-                                            <h2 class="title">హాయ్, నేను క్రిష్!</h2>
-                                            <p>రాజకీయ శక్తి నాటకాలు మరియు విధాన మార్పులు, వ్యూహాత్మక సంస్కరణలతో బలమైన
-                                                నాయకత్వం.</p>
+                                            <h2 class="title">హాయ్, నేను Sk.ఇస్లాముద్దీన్!</h2>
+                                            <p>మరో కురుక్షేత్రం న్యూస్లోకి స్వాగతం. ఇది మీ విశ్వసనీయమైన నిష్పాక్షిక
+                                                మరియు లోతైన జర్నలిజంకు వేదిక.అభివృద్ధి పరిణామాలు మరియు ప్రత్యేకమైన
+                                                నివేదికలు, ప్రపంచాన్ని రూపొందించే
+                                                ప్రభావవంతమైన కథలు, నిపుణుల అంతర్దృష్టులతో లోతైన విశ్లేషణ మరియు ప్రధాన
+                                                సంఘటనలపై
+                                                నిజ-సమయ నవీకరణలు.అభివృద్ధి పరిణామాలు మరియు ప్రత్యేకమైన నివేదికలు,
+                                                ప్రపంచాన్ని రూపొందించే
+                                                ప్రభావవంతమైన కథలు, నిపుణుల అంతర్దృష్టులతో లోతైన విశ్లేషణ మరియు ప్రధాన
+                                                సంఘటనలపై
+                                                నిజ-సమయ నవీకరణలు.</p>
                                             <div class="avatar-social">
                                                 <ul class="list-wrap">
-                                                    <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                                                    <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                                                    <li><a href="#"><i class="fab fa-instagram"></i></a></li>
-                                                    <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+                                                    <li><a href="https://www.facebook.com/share/r/1HT547nmdJ/"
+                                                            target="_blank"><i class="fab fa-facebook-f"></i></a></li>
+                                                    <li><a href="https://www.instagram.com/reel/DHxp6IRt1-w/?igsh=MWdpYm5zbmVxeTYxeg=="
+                                                            target="_blank"><i class="fab fa-instagram"></i></a></li>
+                                                    <li><a href="https://www.youtube.com/@MaroKurukshetram"
+                                                            target="_blank"><i class="fab fa-youtube"></i></a></li>
                                                 </ul>
                                             </div>
                                         </div>
@@ -636,20 +394,6 @@
                                             <img src="assets/img/images/avatar_shape01.png" alt="">
                                             <img src="assets/img/images/avatar_shape02.png" alt="">
                                         </div>
-                                    </div>
-                                </div>
-                                <div class="sidebar-widget">
-                                    <div class="widget-title mb-25">
-                                        <h2 class="title">సభ్యత్వం & అనుచరులు</h2>
-                                        <div class="section-title-line"></div>
-                                    </div>
-                                    <div class="sidebar-social-wrap">
-                                        <ul class="list-wrap">
-                                            <li><a href="#"><i class="fab fa-youtube"></i>యూట్యూబ్</a></li>
-                                            <li><a href="#"><i class="fab fa-instagram"></i>ఇన్‌స్టాగ్రామ్</a></li>
-                                            <li><a href="#"><i class="fab fa-facebook-f"></i>ఫేస్బుక్</a></li>
-                                            <li><a href="#"><i class="fab fa-twitter"></i>ట్విట్టర్</a></li>
-                                        </ul>
                                     </div>
                                 </div>
                             </div>
@@ -666,7 +410,7 @@
                 <div class="row justify-content-center">
                     <div class="col-lg-6">
                         <div class="section-title section-title-two text-center mb-30">
-                            <h2 class="title">మా అగ్ర వర్గాలు</h2>
+                            <h2 class="title">న్యూస్ క్యాటగిరీష్</h2>
                             <p>శక్తి పోరాటాలు మరియు విధాన మార్పులు, సమతుల్య కోర్ మరియు డైనమిక్ సంస్కరణలతో బలమైన
                                 నాయకత్వం.</p>
                         </div>
@@ -677,7 +421,7 @@
                         <div class="col-xl-2 col-lg-3 col-md-4 col-6">
                             <div class="categories-item">
                                 <div class="categories-img">
-                                    <a href="./news.html"><img src="assets/img/images/RR_CM.jpeg" alt=""></a>
+                                    <a href="./news.html"><img src="assets/img/images/BNews2.png" alt=""></a>
                                 </div>
                                 <div class="categories-content">
                                     <a href="#">బ్రేకింగ్ న్యూస్</a>
@@ -687,7 +431,7 @@
                         <div class="col-xl-2 col-lg-3 col-md-4 col-6">
                             <div class="categories-item">
                                 <div class="categories-img">
-                                    <a href="./news.html"><img src="assets/img/images/BRN.avif" alt=""></a>
+                                    <a href="./news3.html"><img src="assets/img/images/BusinessAGRA.png" alt=""></a>
                                 </div>
                                 <div class="categories-content">
                                     <a href="#">వ్యాపారం</a>
@@ -697,7 +441,7 @@
                         <div class="col-xl-2 col-lg-3 col-md-4 col-6">
                             <div class="categories-item">
                                 <div class="categories-img">
-                                    <a href="news.html"><img src="assets/img/images/RR_CM.jpeg" alt=""></a>
+                                    <a href="./cm.html"><img src="assets/img/images/AGRA_LEader.png" alt=""></a>
                                 </div>
                                 <div class="categories-content">
                                     <a href="#">నాయకుడు</a>
@@ -707,7 +451,7 @@
                         <div class="col-xl-2 col-lg-3 col-md-4 col-6">
                             <div class="categories-item">
                                 <div class="categories-img">
-                                    <a href="news.html"><img src="assets/img/images/BRN.avif" alt=""></a>
+                                    <a href="./politics.html"><img src="assets/img/images/politics12.png" alt=""></a>
                                 </div>
                                 <div class="categories-content">
                                     <a href="#">రాజకీయాలు</a>
@@ -717,7 +461,7 @@
                         <div class="col-xl-2 col-lg-3 col-md-4 col-6">
                             <div class="categories-item">
                                 <div class="categories-img">
-                                    <a href="news.html"><img src="assets/img/images/RR_CM.jpeg" alt=""></a>
+                                    <a href="./Social.html"><img src="assets/img/images/SM2.png" alt=""></a>
                                 </div>
                                 <div class="categories-content">
                                     <a href="#">సోషల్ మీడియా</a>
@@ -727,7 +471,7 @@
                         <div class="col-xl-2 col-lg-3 col-md-4 col-6">
                             <div class="categories-item">
                                 <div class="categories-img">
-                                    <a href="news.html"><img src="assets/img/images/BRN.avif" alt=""></a>
+                                    <a href="news2.html"><img src="assets/img/images/SNews.svg" alt=""></a>
                                 </div>
                                 <div class="categories-content">
                                     <a href="#">వార్తలు</a>
@@ -775,67 +519,43 @@
                     <div class="col-xl-6">
                         <div class="ta-overlay-post">
                             <div class="overlay-post-thumb">
-                                <a href="news.html"><img src="assets/img/images/BreakingNews.avif" alt=""></a>
+                                <a href="news4.html"><img src="assets/img/images/SINDOOR1.svg" alt=""></a>
                             </div>
                             <div class="overlay-post-content">
                                 <a href="#" class="post-tag">బ్రేకింగ్ న్యూస్</a>
-                                <h2 class="post-title"><a href="#">వ్యాపారాలను ప్రభావితం చేసే కొత్త విధానాలను ప్రభుత్వం ప్రకటించింది</a></h2>
-                                <div class="blog-post-meta">
-                                    <ul class="list-wrap">
-                                        <li><i class="flaticon-user"></i>నవ్య<a href="#">అడ్మిన్</a></li>
-                                        <li><i class="fa-solid fa-calendar-days"></i>27 ఆగస్టు, 2024</li>
-                                    </ul>
-                                </div>
+                                <h2 class="post-title"><a href="#">ఆపరేషన్ సిందూర్‌లో పాకిస్తాన్‌లోని ఉగ్రవాద శిబిరాలపై
+                                        భారత ఆర్మీ విరుచుపడుతోంది.</a></h2>
                             </div>
                         </div>
                     </div>
                     <div class="col-xl-6">
                         <div class="ta-horizontal-post">
                             <div class="horizontal-post-thumb">
-                                <a href="news.html"><img src="assets/img/images/BRN.avif" alt=""></a>
+                                <a href="news5.html"><img src="assets/img/images/RR44.svg" alt=""></a>
                             </div>
                             <div class="horizontal-post-content">
                                 <a href="#" class="post-tag">రాజకీయాలు</a>
                                 <h2 class="post-title"><a href="#">పాలన కోసం రాజకీయ సంకీర్ణాల
                                         అధికారాన్ని విశ్లేషించడం</a></h2>
-                                <div class="blog-post-meta">
-                                    <ul class="list-wrap">
-                                        <li><i class="fa-solid fa-user"></i>నవ్య<a href="#">అడ్మిన్</a></li>
-                                        <li><i class="fa-solid fa-calendar-days"></i>27 ఆగస్టు, 2024</li>
-                                    </ul>
-                                </div>
                             </div>
                         </div>
                         <div class="ta-horizontal-post">
                             <div class="horizontal-post-thumb">
-                                <a href="news.html"><img src="assets/img/images/BRN.avif" alt=""></a>
+                                <a href="news6.html"><img src="assets/img/images/MN (2).png" alt=""></a>
                             </div>
                             <div class="horizontal-post-content">
-                                <a href="#" class="post-tag">వ్యాపారం</a>
-                                <h2 class="post-title"><a href="#">దేశానికి ఇష్టమైన నాయకులు మరియు వారి
-                                        రోజువారీ వ్యూహాలు</a></h2>
-                                <div class="blog-post-meta">
-                                    <ul class="list-wrap">
-                                        <li><i class="fa-solid fa-user"></i>నవ్య<a href="#">అడ్మిన్</a></li>
-                                        <li><i class="fa-solid fa-calendar-days"></i>27 ఆగస్టు, 2024</li>
-                                    </ul>
-                                </div>
+                                <a href="#" class="post-tag">న్యూస్</a>
+                                <h2 class="post-title"><a href="#">తెలుగు సైనికుడు మురళీ నాయక్ వీరమరణం!</a></h2>
                             </div>
                         </div>
                         <div class="ta-horizontal-post">
                             <div class="horizontal-post-thumb">
-                                <a href="news.html"><img src="assets/img/images/BRN.avif" alt=""></a>
+                                <a href="news7.html"><img src="assets/img/images/CROME091.svg" alt=""></a>
                             </div>
                             <div class="horizontal-post-content">
                                 <a href="#" class="post-tag">సోషల్ మీడియా</a>
                                 <h2 class="post-title"><a href="#">విధాన గోప్యత మరియు ప్రభుత్వ
                                         పర్యవేక్షణ యొక్క ప్రమాదాలు</a></h2>
-                                <div class="blog-post-meta">
-                                    <ul class="list-wrap">
-                                        <li><i class="fa-solid fa-user"></i>నవ్య<a href="#">అడ్మిన్</a></li>
-                                        <li><i class="fa-solid fa-calendar-days"></i>27 ఆగస్టు, 2024</li>
-                                    </ul>
-                                </div>
                             </div>
                         </div>
                     </div>
@@ -845,264 +565,146 @@
         <!-- recipe-area-end -->
 
         <!-- ad-banner-area -->
-        <div class="ad-banner-area">
+        <!-- <div class="ad-banner-area">
             <div class="container">
                 <div class="ad-banner-img">
-                    <a href="news.html">
-                        <img src="assets/img/images/channels4_banner.jpg" alt="">
+                    <a href="#">
+                        <img src="assets/img/images/09 may Maharana Pratap copy.jpg" alt="">
                     </a>
                 </div>
             </div>
-        </div>
+        </div> -->
         <!-- ad-banner-area-end -->
 
-        <!-- healthy-area -->
-        <section class="healthy-area pt-60 pb-30">
+        <section class="slider-section">
             <div class="container">
-                <div class="healthy-inner-wrap">
-                    <div class="row">
-                        <div class="col-70">
-                            <div class="section-title-wrap mb-30">
-                                <div class="section-title">
-                                    <h2 class="title">టీమ్ ఇండియా ..!!🏆</h2>
+                <div class="slider-wrapper">
+                    <h1 style="text-align: center; color:#1001bf;">తాజా ఐపిఎల్ వార్తల నవీకరణ!</h1>
+                    <p>ఇండియన్ ప్రీమియర్ లీగ్ (IPL) 2025 సీజన్‌లో మ్యాచ్‌ల మధ్య ఒక వారం విరామం (మే 12 నుంచి మే 18 వరకు)
+                        ఇవ్వబడింది. ఈ బ్రేక్ ప్రధానంగా ఎన్నికల షెడ్యూల్‌ను దృష్టిలో ఉంచుకొని, ఆటగాళ్లకు శారీరకంగా
+                        విశ్రాంతి ఇచ్చే ఉద్దేశంతో ప్రకటించబడింది. ఈ సమయంలో ఎలాంటి మ్యాచ్‌లు జరగకపోయినా, మే 19 నుంచి IPL
+                        తిరిగి ప్రారంభం కానుంది. అభిమానులు మళ్లీ ఉత్కంఠభరితమైన పోటీలు ఆస్వాదించేందుకు ఆసక్తిగా
+                        ఎదురుచూస్తున్నారు.</p>
+                    <div class="custom-slider">
+                        <div class="slider-item">
+                            <div class="card-box">
+                                <div class="card-thumb">
+                                    <img src="assets/img/images/Dhoni.jpeg" alt="">
                                 </div>
-                                <div class="section-title-line"></div>
-                            </div>
-                            <div class="row">
-                                <div class="col-lg-4 col-md-6 col-sm-6">
-                                    <div class="featured-post-item healthy-post">
-                                        <div class="featured-post-thumb">
-                                            <a href="news.html"><img src="assets/img/images/TeamIndia.jpg"
-                                                    alt=""></a>
-                                        </div>
-                                        <div class="featured-post-content">
-                                            <a href="#" class="post-tag">విజేతలు</a>
-                                            <h2 class="post-title"><a href="#">క్రికెట్ శిక్షణా సెషన్ల
-                                                    కోసం పూర్తి ఆట ప్రణాళిక</a></h2>
-                                            <div class="blog-post-meta">
-                                                <ul class="list-wrap">
-                                                    <li><i class="fa-solid fa-user"></i>నవ్య<a
-                                                            href="#">అడ్మిన్</a></li>
-                                                    <li><i class="fa-solid fa-calendar-days"></i>27 ఆగస్టు, 2024</li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-4 col-md-6 col-sm-6">
-                                    <div class="featured-post-item healthy-post">
-                                        <div class="featured-post-thumb">
-                                            <a href="news.html"><img src="assets/img/images/Dhoni.jpeg"
-                                                    alt=""></a>
-                                        </div>
-                                        <div class="featured-post-content">
-                                            <a href="#" class="post-tag">ధోని</a>
-                                            <h2 class="post-title"><a href="#">భయం లేదు, ఫస్ లేదు -
-                                                    కేవలం ధోని మాస్టర్ క్లాస్!</a></h2>
-                                            <div class="blog-post-meta">
-                                                <ul class="list-wrap">
-                                                    <li><i class="fa-solid fa-user"></i>నవ్య<a
-                                                            href="#">అడ్మిన్</a></li>
-                                                    <li><i class="fa-solid fa-calendar-days"></i>27 ఆగస్టు, 2024</li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-4 col-md-6 col-sm-6">
-                                    <div class="featured-post-item healthy-post">
-                                        <div class="featured-post-thumb">
-                                            <a href="news.html"><img src="assets/img/images/Rohith.jpeg"
-                                                    alt=""></a>
-                                        </div>
-                                        <div class="featured-post-content">
-                                            <a href="#" class="post-tag">రోహిత్</a>
-                                            <h2 class="post-title"><a href="#">హిట్‌మన్ మోడ్: సిక్సెస్
-                                                    కవిత్వం లాగా ప్రవహిస్తుంది!</a></h2>
-                                            <div class="blog-post-meta">
-                                                <ul class="list-wrap">
-                                                    <li><i class="fa-solid fa-user"></i>నవ్య<a
-                                                            href="#">అడ్మిన్</a></li>
-                                                    <li><i class="fa-solid fa-calendar-days"></i>27 ఆగస్టు, 2024</li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-4 col-md-6 col-sm-6">
-                                    <div class="featured-post-item healthy-post">
-                                        <div class="featured-post-thumb">
-                                            <a href="news.html"><img src="assets/img/images/Captain.jpeg"
-                                                    alt=""></a>
-                                        </div>
-                                        <div class="featured-post-content">
-                                            <a href="#" class="post-tag">కున్ఫు పాండ్యా</a>
-                                            <h2 class="post-title"><a href="#">ఒక మృగం లాగా పవర్ కొట్టడం
-                                                    - అది హార్డెక్!</a></h2>
-                                            <div class="blog-post-meta">
-                                                <ul class="list-wrap">
-                                                    <li><i class="fa-solid fa-user"></i>నవ్య<a
-                                                            href="#">అడ్మిన్</a></li>
-                                                    <li><i class="fa-solid fa-calendar-days"></i>27 ఆగస్టు, 2024</li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-4 col-md-6 col-sm-6">
-                                    <div class="featured-post-item healthy-post">
-                                        <div class="featured-post-thumb">
-                                            <a href="news.html"><img src="assets/img/images/Rohith.jpeg"
-                                                    alt=""></a>
-                                        </div>
-                                        <div class="featured-post-content">
-                                            <a href="#" class="post-tag">రోహిత్</a>
-                                            <h2 class="post-title"><a href="#">అప్రయత్నంగా చక్కదనం,
-                                                    క్రూరమైన విధ్వంసం!</a></h2>
-                                            <div class="blog-post-meta">
-                                                <ul class="list-wrap">
-                                                    <li><i class="fa-solid fa-user"></i>నవ్య<a
-                                                            href="#">అడ్మిన్</a></li>
-                                                    <li><i class="fa-solid fa-calendar-days"></i>27 ఆగస్టు, 2024</li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-4 col-md-6 col-sm-6">
-                                    <div class="featured-post-item healthy-post">
-                                        <div class="featured-post-thumb">
-                                            <a href="news.html"><img src="assets/img/images/Hardik.jpeg"
-                                                    alt=""></a>
-                                        </div>
-                                        <div class="featured-post-content">
-                                            <a href="#" class="post-tag">హార్దిక్</a>
-                                            <h2 class="post-title"><a href="#">మండుతున్న వైఖరితో
-                                                    కెప్టెన్ కూల్!</a></h2>
-                                            <div class="blog-post-meta">
-                                                <ul class="list-wrap">
-                                                    <li><i class="fa-solid fa-user"></i>నవ్య<a
-                                                            href="#">అడ్మిన్</a></li>
-                                                    <li><i class="fa-solid fa-calendar-days"></i>27 ఆగస్టు, 2024</li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                    </div>
+                                <div class="card-content">
+                                    <a href="#" class="tag">ఎంఎస్ ధోనీ</a>
+                                    <h2 class="title"><a href="#">భయంకరమైన ఒత్తిడిలో కూడా శాంతంగా నిర్ణయం తీసుకునే అతని
+                                            శైలి
+                                            ప్రపంచానికి ఆదర్శంగా నిలిచింది.!</a></h2>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-30">
-                            <div class="sidebar-wrap no-sticky">
-                                <div class="sidebar-widget">
-                                    <div class="widget-title mb-25">
-                                        <h2 class="title">స్పోర్ట్స్ ముఖ్యాంశాలు</h2>
-                                        <div class="section-title-line"></div>
-                                    </div>
-                                    <div class="popular-post-wrap">
-                                        <div class="popular-post">
-                                            <div class="thumb">
-                                                <a href="news.html"><img src="assets/img/images/TeamIndia.jpg"
-                                                        alt=""></a>
-                                            </div>
-                                            <div class="content">
-                                                <a href="#" class="post-tag-two">బ్రేకింగ్ న్యూస్</a>
-                                                <h2 class="post-title"><a href="#">టీమ్ ఇండియా మళ్లీ
-                                                        రుజువు చేసింది</a></h2>
-                                                <div class="blog-post-meta">
-                                                    <ul class="list-wrap">
-                                                        <li><i class="fa-solid fa-calendar-days"></i>27 ఆగస్టు, 2024</li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="popular-post">
-                                            <div class="thumb">
-                                                <a href="news.html"><img src="assets/img/images/RevanthReddyCM.jpeg"
-                                                        alt=""></a>
-                                            </div>
-                                            <div class="content">
-                                                <a href="#" class="post-tag-two">రాజకీయాలు</a>
-                                                <h2 class="post-title"><a href="#">హెలికాప్టర్ షాట్,
-                                                        ధోని సంతకం!</a></h2>
-                                                <div class="blog-post-meta">
-                                                    <ul class="list-wrap">
-                                                        <li><i class="fa-solid fa-calendar-days"></i>27 ఆగస్టు, 2024</li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="popular-post">
-                                            <div class="thumb">
-                                                <a href="news.html"><img src="assets/img/images/Prabhas.jpg"
-                                                        alt=""></a>
-                                            </div>
-                                            <div class="content">
-                                                <a href="#" class="post-tag-two">వ్యాపారం</a>
-                                                <h2 class="post-title"><a href="#">డబుల్ సెంచరీ కింగ్,
-                                                        రోహిత్ శర్మ!</a></h2>
-                                                <div class="blog-post-meta">
-                                                    <ul class="list-wrap">
-                                                        <li><i class="fa-solid fa-calendar-days"></i>27 ఆగస్టు, 2024</li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="popular-post">
-                                            <div class="thumb">
-                                                <a href="news.html"><img src="assets/img/images/Technology.jpeg"
-                                                        alt=""></a>
-                                            </div>
-                                            <div class="content">
-                                                <a href="#" class="post-tag-two">టెక్నాలజీ</a>
-                                                <h2 class="post-title"><a href="#">నిర్భయమైన ఆల్ రౌండర్,
-                                                        హార్దిక్..!</a></h2>
-                                                <div class="blog-post-meta">
-                                                    <ul class="list-wrap">
-                                                        <li><i class="fa-solid fa-calendar-days"></i>27 ఆగస్టు, 2024</li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="popular-post">
-                                            <div class="thumb">
-                                                <a href="news.html"><img src="assets/img/images/Traveller.webp"
-                                                        alt=""></a>
-                                            </div>
-                                            <div class="content">
-                                                <a href="#" class="post-tag-two">సోషల్ మీడియా</a>
-                                                <h2 class="post-title"><a href="#">టీమ్ ఇండియా, ఆపలేని
-                                                        శక్తి!</a></h2>
-                                                <div class="blog-post-meta">
-                                                    <ul class="list-wrap">
-                                                        <li><i class="fa-solid fa-calendar-days"></i>27 ఆగస్టు, 2024</li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
+
+                        <div class="slider-item">
+                            <div class="card-box">
+                                <div class="card-thumb">
+                                    <img src="assets/img/images/ROHITH22.png" alt="">
+                                </div>
+                                <div class="card-content">
+                                    <a href="#" class="tag">రోహిత్ శర్మ</a>
+                                    <h2 class="title"><a href="#">ఒకసారి కుదిరితే స్టేడియాన్ని ఓడించేదాకా ఆడతాడు. రోహిత్
+                                            శర్మ మన దేశానికి ఎన్నో విజయాలు మోసుకొచ్చిన ఓ ఘనత!</a></h2>
                                 </div>
                             </div>
                         </div>
+
+                        <div class="slider-item">
+                            <div class="card-box">
+                                <div class="card-thumb">
+                                    <img src="assets/img/images/HARDIK22.png" alt="">
+                                </div>
+                                <div class="card-content">
+                                    <a href="#" class="tag">హార్దిక్ పాండ్యా</a>
+                                    <h2 class="title"><a href="#">హార్దిక్ ఆటలో స్పీడ్, స్టైల్ మరియు ఫైటింగ్ స్పిరిట్
+                                            ఉంటాయి. తన ఆటతో ఎప్పుడూ ఉత్సాహం నింపే వ్యక్తిత్వం!</a></h2>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="slider-item">
+                            <div class="card-box">
+                                <div class="card-thumb">
+                                    <img src="assets/img/images/KOHLI.jpg" alt="">
+                                </div>
+                                <div class="card-content">
+                                    <a href="#" class="tag">విరాట్ కోహ్లీ</a>
+                                    <h2 class="title"><a href="#">కోహ్లీ మన దేశ గర్వం. ఎప్పుడు ఆగ్రహంగా కనిపించినా,
+                                            గుండె
+                                            మాత్రం జట్టుకోసం ఎప్పుడూ తపనపడే నాయకుడిగా నిలిచాడు!</a></h2>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="slider-item">
+                            <div class="card-box">
+                                <div class="card-thumb">
+                                    <img src="assets/img/images/JSM.png" alt="Jasprit Bumrah">
+                                </div>
+                                <div class="card-content">
+                                    <a href="#" class="tag">జస్ప్రీత్ బుమ్రా</a>
+                                    <h2 class="title">
+                                        <a href="#">
+                                            వేగం, కచ్చితత్వం, అద్భుతమైన యార్కర్లు – బుమ్రా భారత బౌలింగ్‌కు అడ్డుపడే
+                                            గోడగా నిలుస్తాడు. ప్రతి బంతిలో ప్రత్యర్థిని కుదిపేస్తాడు!
+                                        </a>
+                                    </h2>
+                                </div>
+                            </div>
+                        </div>
+
                     </div>
                 </div>
             </div>
         </section>
-        <!-- healthy-area-end -->
 
         <!-- ad-banner-area -->
         <div class="ad-banner-area pb-90">
             <div class="container">
                 <div class="ad-banner-img">
-                    <a href="news.html">
-                        <!-- <video width="1290" height="230" controls>
-                            <source src="assets/img/images/SunovationV.mp4" type="video/mp4">
-                        </video> -->
-                        <img src="assets/img/images/channels4_banner.jpg">
+                    <a href="#">
+                        <img src="assets/img/images/12 may Budhapornima.jpg">
                     </a>
                 </div>
             </div>
         </div>
         <!-- ad-banner-area-end -->
+
+        <section class="ntr">
+            <h1>తాజా సినిమా అప్‌డేట్స్!</h1>
+            <div class="container news-container">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <img src="./assets/img/images/VV.png" alt="" class="news-img" />
+                    </div>
+                    <div class="col-lg-6 news-content">
+                        <div class="news-title">విక్టరీ వెంకటేష్, త్రివిక్రమ్ శ్రీనివాస్ కాంబినేషన్: టాలీవుడ్‌లో కొత్త చిత్రంతో సంచలనం!</div>
+                        <p><span class="highlight">“విక్టరీ వెంకటేష్”</span> మరియు మాటల మాంత్రికుడు <span
+                                class="highlight">“త్రివిక్రమ్ శ్రీనివాస్”</span> తొలిసారిగా ఓ పూర్తి స్థాయి చిత్రానికి
+                            కలిసి పని చేయబోతుండటం సినీ圈లో పెద్ద సంచలనంగా మారింది. ఇప్పటికే కథను <span
+                                class="highlight">“త్రివిక్రమ్”</span> వినిపించగా, <span
+                                class="highlight">“వెంకటేష్”</span> వెంటనే అంగీకరించారు. ఫ్యామిలీ ఎంటర్టైనర్‌గా
+                            రూపొందనున్న ఈ సినిమాకు <span class="highlight">“హారిక అండ్ హాసిని క్రియేషన్స్”</span>
+                            నిర్మాణ బాధ్యతలు చేపట్టనుంది. జూలై 2025లో షూటింగ్ ప్రారంభం కానుంది, 2026 వేసవిలో విడుదల చేసే
+                            ఉద్దేశంతో ఉన్నారు. గతంలో <span class="highlight">“నువ్వు నాకు నచ్చావ్”</span>, <span
+                                class="highlight">“మల్లీశ్వరి”</span> వంటి విజయవంతమైన చిత్రాల్లో కలిసి పనిచేశారు గానీ,
+                            ఈసారి దర్శకుడిగా <span class="highlight">“త్రివిక్రమ్”</span> – నటుడిగా <span
+                                class="highlight">“వెంకటేష్”</span> కలిసి పనిచేయడం తొలిసారి కావడం విశేషం. ఈ
+                            కాంబినేషన్‌పై అభిమానుల్లో భారీ అంచనాలు ఏర్పడ్డాయి.</p>
+                        <p>ఈ చిత్రానికి సంబంధించిన మరిన్ని అప్‌డేట్స్, పరిచయాలు త్వరలో విడుదల అవుతాయని దర్శకుడు <span
+                                class="highlight">“త్రివిక్రమ్”</span> తెలిపారు. అలాగే, ఈ చిత్రంలో ప్రముఖ నటీనటులు ఇతర
+                            కీలక పాత్రల్లో కనిపించనున్నారు. ఈ సినిమా ఆధారంగా మరిన్ని ప్రత్యేకమైన అవార్డులు, పెద్ద
+                            ప్రాజెక్టులు రావటానికి అవకాశం ఉందని సినీ వర్గాలు భావిస్తున్నాయి.</p>
+
+
+                    </div>
+                </div>
+            </div>
+        </section>
 
     </main>
     <!-- main-area-end -->
@@ -1116,7 +718,7 @@
                         <div class="col-lg-3 col-md-7">
                             <div class="footer-widget">
                                 <div class="fw-logo">
-                                    <a href="index.html"><img src="assets/img/images/Kuru_logo.png" alt=""></a>
+                                    <a href="index.html"><img src="assets/img/images/maro news.png" alt=""></a>
                                 </div>
                                 <div class="footer-content">
                                     <p>అభివృద్ధి పరిణామాలు మరియు ప్రత్యేకమైన నివేదికలు, ప్రపంచాన్ని రూపొందించే
@@ -1130,7 +732,7 @@
                                 <h4 class="fw-title">కంపెనీ</h4>
                                 <div class="footer-link-wrap">
                                     <ul class="list-wrap">
-                                        <li><a href="index.html">మా గురించి</a></li>
+                                        <li><a href="./about.html">మా గురించి</a></li>
                                         <li><a href="news.html">పరీక్ష వార్తలు</a></li>
                                         <li><a href="#">పోడ్కాస్ట్</a></li>
                                         <li><a href="#">సంఘటనలు</a></li>
@@ -1145,8 +747,6 @@
                                 <div class="footer-link-wrap">
                                     <ul class="list-wrap">
                                         <li><a href="#">సంప్రదించండి & ఫాక్</a></li>
-                                        <!-- <li><a href="contact.html">Oders & Returns</a></li> -->
-                                        <!-- <li><a href="contact.html">Gift Cards</a></li> -->
                                         <li><a href="#">రిజిస్టర్</a></li>
                                         <li><a href="#">కేటలాగ్</a></li>
                                     </ul>
@@ -1159,8 +759,7 @@
                                 <div class="footer-link-wrap">
                                     <ul class="list-wrap">
                                         <li><a href="#">దుకాణం</a></li>
-                                        <!-- <li><a href="contact.html">Recipes</a></li> -->
-                                        <li><a href="news.html">వార్తలు</a></li>
+                                        <li><a href="news2.html">వార్తలు</a></li>
                                         <li><a href="#">ప్రయాణం</a></li>
                                         <li><a href="#">హాట్‌లైన్</a></li>
                                     </ul>
@@ -1172,11 +771,12 @@
                                 <h4 class="fw-title">మమ్మల్ని అనుసరించండి</h4>
                                 <div class="footer-link-wrap">
                                     <ul class="list-wrap">
-                                        <li><a href="#">ఫేస్బుక్</a></li>
-                                        <li><a href="#">ట్విట్టర్</a></li>
-                                        <li><a href="#">ఇన్‌స్టాగ్రామ్</a></li>
-                                        <li><a href="#">యూట్యూబ్</a></li>
-                                        <li><a href="#">పింటరెస్ట్</a></li>
+                                        <li><a href="https://www.facebook.com/share/r/1HT547nmdJ/"
+                                                target="_blank">ఫేస్బుక్</a></li>
+                                        <li><a href="https://www.instagram.com/reel/DHxp6IRt1-w/?igsh=MWdpYm5zbmVxeTYxeg=="
+                                                target="_blank">ఇన్‌స్టాగ్రామ్</a></li>
+                                        <li><a href="https://www.youtube.com/@MaroKurukshetram"
+                                                target="_blank">యూట్యూబ్</a></li>
                                     </ul>
                                 </div>
                             </div>
@@ -1218,8 +818,59 @@
     <script src="assets/js/ajax-form.js"></script>
     <script src="assets/js/wow.min.js"></script>
     <script src="assets/js/main.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+
+    <script>
+        $(document).ready(function () {
+            $('.custom-slider').slick({
+                dots: false,
+                infinite: true,
+                speed: 1000,
+                autoplay: true,
+                arrows: true,
+                prevArrow: '<button type="button" class="slick-prev"><i class="flaticon-next">←</i></button>',
+                nextArrow: '<button type="button" class="slick-next"><i class="flaticon-next">→</i></button>',
+                slidesToShow: 4,
+                slidesToScroll: 1,
+                responsive: [
+                    {
+                        breakpoint: 1200,
+                        settings: {
+                            slidesToShow: 3,
+                            slidesToScroll: 1
+                        }
+                    },
+                    {
+                        breakpoint: 992,
+                        settings: {
+                            slidesToShow: 2,
+                            slidesToScroll: 1
+                        }
+                    },
+                    {
+                        breakpoint: 767,
+                        settings: {
+                            slidesToShow: 2,
+                            slidesToScroll: 1,
+                            arrows: false
+                        }
+                    },
+                    {
+                        breakpoint: 575,
+                        settings: {
+                            slidesToShow: 1,
+                            slidesToScroll: 1,
+                            arrows: false
+                        }
+                    }
+                ]
+            });
+        });
+    </script>
+
 </body>
 
-<!-- Mirrored from themegenix.net/html/zaira/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 11 Mar 2025 04:53:44 GMT -->
 
 </html>
